@@ -1,12 +1,12 @@
 //
-//  ChangeIconAppView.swift
+//  iOSApplicationLauncher.swift
 //  AllProjects
 //
 //  Created by Dogu on 7.06.2024.
 //
 
 import SwiftUI
-struct ChangeIconAppView: View {
+struct iOSApplicationLauncher: View {
     
    
     
@@ -157,5 +157,5 @@ struct ChangeIconAppView: View {
         
     }
 #Preview {
-    ChangeIconAppView()
+    iOSApplicationLauncher()
 }
