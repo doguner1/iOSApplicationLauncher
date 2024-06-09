@@ -32,6 +32,14 @@ struct iOSApplicationLauncher: View {
                         UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     }
                 }
+                Button("Hatırlatıcı") {
+                    
+                    if let bundleIdentifier = Bundle.main.bundleIdentifier,
+                       let url = URL(string: "x-apple-reminderkit://") {
+                        // Ayarlar uygulamasını açıyoruz
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
                 Button("Sağlık") {
                     
                     if let bundleIdentifier = Bundle.main.bundleIdentifier,
