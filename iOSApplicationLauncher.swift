@@ -1,10 +1,3 @@
-//
-//  iOSApplicationLauncher.swift
-//  AllProjects
-//
-//  Created by Dogu on 7.06.2024.
-//
-
 import SwiftUI
 struct iOSApplicationLauncher: View {
     
@@ -35,6 +28,14 @@ struct iOSApplicationLauncher: View {
                     
                     if let bundleIdentifier = Bundle.main.bundleIdentifier,
                        let url = URL(string: "itms-apps://itunes.apple.com") {
+                        // Ayarlar uygulamasını açıyoruz
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
+                Button("Sağlık") {
+                    
+                    if let bundleIdentifier = Bundle.main.bundleIdentifier,
+                       let url = URL(string: "x-apple-health://") {
                         // Ayarlar uygulamasını açıyoruz
                         UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     }
